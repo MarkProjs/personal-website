@@ -1,10 +1,10 @@
 import NavBar from "./NavBar";
-import {About} from '../components/About';
-import {Contact} from '../components/Contact';
-import {Education} from '../components/Education';
-import {Experience} from '../components/Experience';
-import {Home} from '../components/Home';
-import {Skills} from '../components/Skills';
+import About from '../components/About';
+import Contact from '../components/Contact';
+import Education from '../components/Education';
+import Experience from '../components/Experience';
+import Home from '../components/Home';
+import Skills from '../components/Skills';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function Nav() {
