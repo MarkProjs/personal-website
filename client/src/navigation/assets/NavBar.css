@@ -1,36 +1,156 @@
-.NavBar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+/* styles.css */
+
+.navbar {
+  width: 100%;
   background: #1A1E23;
-  height: 7vh;
+}
+
+.links {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
 }
 
 .nav-item {
-  position: relative;
-  padding: 10px 20px;
-  font-family: Lato, sans-serif;
-  color: #ecf0f1;
+  color: white;
   text-decoration: none;
-  text-transform: uppercase;
+  margin: 20px;
 }
 
-.nav-item::after {
+.toggleButton {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.toggleButton svg {
+  font-size: 50px;
+}
+
+.toggleButton button {
+  margin-right: 20px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#open {
+  height: 100vh;
+}
+
+#open .links {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 100px;
+}
+
+#open a {
+  width: 100%;
+  text-align: center;
+}
+
+/* Underline Animation Styles */
+.nav-item {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-item::before {
   content: '';
   position: absolute;
-  bottom: 0;
   left: 0;
-  width:0;
+  bottom: -2px;
+  width: 0;
   height: 2px;
-  background-color: #3498db;
-  transition: width 0.5s;
+  background-color:#0096FF;
+  transition: width 0.3s ease;
 }
 
-.nav-item:hover::after {
+.nav-item:hover::before {
   width: 100%;
 }
-.nav-item.active::after{
-  width:100%;
+
+/* Media Queries */
+@media only screen and (max-width: 900px) {
+  .nav-item {
+    width: 70px;
+  }
+
+  .nav-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color:#0096FF;
+    transition: width 0.3s ease;
+  }
+
+  .nav-item:hover::before {
+    width: 100%;
+  }
 }
 
+@media only screen and (max-width: 600px) {
+  .toggleButton {
+    display: flex;
+  }
+  #close a {
+    display: none;
+  }
 
+  .nav-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #0096FF;
+    transition: width 0.3s ease;
+  }
+
+  .nav-item:hover::before {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .toggleButton {
+    display: none;
+  }
+
+  .hiddenLinks {
+    display: none;
+  }
+
+  #open {
+    height: 100px;
+  }
+
+  #open .links {
+    flex-direction: row;
+  }
+  .nav-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #0096FF;
+    transition: width 0.3s ease;
+  }
+
+  .nav-item:hover::before {
+    width: 100%;
+  }
+}
