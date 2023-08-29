@@ -4,11 +4,7 @@ import Home from "../components/Home";
 import Skills from "../components/Skills";
 import NavBar from "./NavBar";
 import "./assets/Nav.css";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function Nav() {
   return (
