@@ -1,6 +1,4 @@
-import About from "../components/About";
 import Contact from "../components/Contact";
-import Education from "../components/Education";
 import Experience from "../components/Experience";
 import Home from "../components/Home";
 import Skills from "../components/Skills";
@@ -19,9 +17,7 @@ function Nav() {
         <NavBar />
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path="/about" exact element={<About />} />
           <Route path="/skills" exact element={<Skills />} />
-          <Route path="/education" exact element={<Education />} />
           <Route path="/experience" exact element={<Experience />} />
           <Route path="/contact" exact element={<Contact />} />
         </Routes>
