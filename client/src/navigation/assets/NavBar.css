@@ -73,7 +73,8 @@
   transition: width 0.3s ease;
 }
 
-.nav-item:hover::before {
+.nav-item:hover::before,
+.nav-item.active::before {
   width: 100%;
 }
 
@@ -94,7 +95,8 @@
     transition: width 0.3s ease;
   }
 
-  .nav-item:hover::before {
+  .nav-item:hover::before,
+  .nav-item.active::before {
     width: 100%;
   }
 }
@@ -118,7 +120,8 @@
     transition: width 0.3s ease;
   }
 
-  .nav-item:hover::before {
+  .nav-item:hover::before,
+  .nav-item.active::before {
     width: 100%;
   }
 }
@@ -150,7 +153,8 @@
     transition: width 0.3s ease;
   }
 
-  .nav-item:hover::before {
+  .nav-item:hover::before,
+  .nav-item.active::before {
     width: 100%;
   }
 }
