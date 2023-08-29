@@ -1,11 +1,15 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import "./assets/NavBar.css";
 import ReorderIcon from "@material-ui/icons/Reorder";
 
 function NavBar() {
   const [expandNavbar, setExpandNavbar] = useState(false);
+  const location = useLocation();
 
+  useEffect(()=>{
+    setExpandNavbar(false);
+  }, [location]);
   return (
     <div className="navbar" id={expandNavbar ? "open" : "close"}>
       <div className="toggleButton">
