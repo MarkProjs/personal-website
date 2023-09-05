@@ -1,0 +1,9 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactList {
+  display:flex;
+  justify-content:space-between;
+}
