@@ -32,7 +32,7 @@ function Contact() {
   return (
     <div className="contact">
       <h1>Let's get connected!</h1>
-      <p> Message me or email and let us get in touch!</p>
+      <p> Message or email me and let us get in touch!</p>
       <div className="contactList">
         {contactItems.map((item, index) => (
           <ContactCard key={index} item={item} />
