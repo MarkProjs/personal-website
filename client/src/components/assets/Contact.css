@@ -1,11 +1,16 @@
-.contact {
-  display: flex;
-  flex-direction: column;
-}
-
 .contactList {
   display:flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content:center;
+}
+
+.intro {
+  margin-left: 5rem;
+}
+.intro h1 {
+  font-size: 4rem;
+}
+
+.intro p {
+  font-size: 2rem;
 }

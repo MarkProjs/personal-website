@@ -6,7 +6,13 @@ function ContactCard({ item }) {
     <div className="contactCard">
       {item.icon}
       <h3>{item.title}</h3>
-      <p>{item.desc}</p>
+      {item.link.startsWith('https://')? (
+        <a href={item.link}>
+          Check it out!
+        </a>
+      ) : (
+        <p>{item.link}</p>
+      )}
     </div>
   );
 }

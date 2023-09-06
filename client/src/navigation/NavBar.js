@@ -25,11 +25,8 @@ function NavBar() {
         <NavLink to="/" activeClassName="active" className="nav-item">
           HOME
         </NavLink>
-        <NavLink to="/skills" activeClassName="active" className="nav-item">
-          SKILLS
-        </NavLink>
-        <NavLink to="/experience" activeClassName="active" className="nav-item">
-          EXPERIENCE
+        <NavLink to="/about" activeClassName="active" className="nav-item">
+          ABOUT
         </NavLink>
         <NavLink to="/contact" activeClassName="active" className="nav-item">
           CONTACT
