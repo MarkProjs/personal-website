@@ -18,12 +18,12 @@ const contactItems = [
   },
   {
     icon: <EmailIcon style={{ fontSize: "5rem" }} />,
-    title: "Email me to drop some knowledge!",
+    title: "Email to drop some knowledge!",
     link: "aglubamark@yahoo.ca",
   },
   {
     icon: <ContactPhoneIcon style={{ fontSize: "5rem" }} />,
-    title: "Text or call me!",
+    title: "Text or call!",
     link: "+1 514-570-0827",
   },
 ];
