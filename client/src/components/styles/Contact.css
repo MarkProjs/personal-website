@@ -1,0 +1,29 @@
+.contact{
+  background-image: url('../../../public/images/background-contact.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  margin: 0;
+  padding: 0;
+  height: calc(100vh - 75px);
+}
+
+.contactList {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.intro {
+  margin-left: 5rem;
+}
+.intro h1 {
+  font-size: 4rem;
+  margin: 0;
+  
+}
+
+.intro p {
+  font-size: 2rem;
+  margin:0;
+}

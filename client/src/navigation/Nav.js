@@ -2,7 +2,6 @@ import Contact from "../components/Contact";
 import Home from "../components/Home";
 import About from "../components/About";
 import NavBar from "./NavBar";
-import "./assets/Nav.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function Nav() {

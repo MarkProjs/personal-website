@@ -1,8 +1,9 @@
 /* styles.css */
-
 .navbar {
   width: 100%;
   background: #1A1E23;
+  margin:0;
+  height: 75px;
 }
 
 .links {
