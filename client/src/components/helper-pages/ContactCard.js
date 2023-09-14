@@ -7,7 +7,7 @@ function ContactCard({ item }) {
       {item.icon}
       <h3>{item.title}</h3>
       {item.link.startsWith('https://')? (
-        <a href={item.link}>
+        <a href={item.link} target="_blank" rel="noreferrer">
           Check it out!
         </a>
       ) : (
