@@ -1,3 +1,4 @@
+import Projects from "./Projects";
 import "./styles/Home.css";
 import image from "../assets/intro-pic.jpg";
 
@@ -15,6 +16,9 @@ function Home() {
           <img src={image} alt="profile_pic" id="profile_pic" />
         </div>
       </div>
+
+
+      <Projects />
     </div>
   );
 }
