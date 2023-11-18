@@ -1,4 +1,16 @@
+
+
 #profile_pic {
-  width:200px;
-  height: auto;
+  width:250px;
+  height:350px;
+  border-radius: 20%;
+  object-fit:cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid #fff;
+
+}
+
+.introduction {
+  display: flex;
+  justify-content: space-between;
 }
