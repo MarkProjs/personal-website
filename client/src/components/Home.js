@@ -8,7 +8,7 @@ function Home() {
       <div className="main_heading">
         <div className="introduction">
           <div className="description">
-            <h1> Hello, This is Mark!</h1>
+            <h1 className="hello"> Hello, This is Mark!</h1>
             <p className="intro">
               Computer science graduate with a passion for building web applications. Currently seeking new opportunities as junior developer. Feel free to reach out! 
             </p>
