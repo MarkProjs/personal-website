@@ -1,4 +1,10 @@
+.home {
 
+  background:  linear-gradient(135deg, #17a8d5, #000000);
+  color: white;
+  width: 100%;
+  height: calc(100vh - 75px);
+}
 
 #profile_pic {
   width:250px;
