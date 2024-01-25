@@ -10,14 +10,14 @@ function Home() {
           <div className="description">
             <h1 className="hello"> Hello, This is Mark!</h1>
             <p className="intro">
-              Computer science graduate with a passion for building web applications. Currently seeking new opportunities as junior developer. Feel free to reach out! 
+              Computer science graduate with a passion for building applications. 
+              Currently seeking new opportunities as junior developer. 
+              Feel free to reach out! 
             </p>
           </div>
           <img src={image} alt="profile_pic" id="profile_pic" />
         </div>
       </div>
-
-
       <Projects />
     </div>
   );

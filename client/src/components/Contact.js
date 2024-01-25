@@ -8,7 +8,7 @@ import ContactCard from "./helper-pages/ContactCard";
 const contactItems = [
   {
     icon: <LinkedInIcon style={{ fontSize: "5rem" }} />,
-    title: "Message me at LinkedIn",
+    title: "Message me at LinkedIn!",
     link: "https://www.linkedin.com/in/mark-agluba-10a600237/",
   },
   {
