@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/ContactCard.css";
+import "./styles/ContactCard.css";
 
 function ContactCard({ item }) {
   return (

@@ -5,7 +5,7 @@ import image from "../assets/intro-pic.jpg";
 function Home() {
   return (
     <div className="home">
-      <div className="main_heading">
+      <div className="main-heading">
         <div className="introduction">
           <div className="description">
             <h1 className="hello"> Hello, This is Mark!</h1>
