@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './styles/About.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function About() {
+
+  useEffect(()=>{
+    AOS.init();
+  }, []);
+
+
   return(
     <div className='about'>
-     <div className='education'>
+     <div data-aos='fade-left' className='education'>
       Education
      </div>
-     <div className='experience'>
+     <div data-aos='flip-up' className='experience'>
       Experience
      </div>
-     <div className='skills'>
+     <div data-aos='slide-up' className='skills'>
       Skills
      </div>
     </div>
