@@ -7,21 +7,21 @@ function About() {
 
   useEffect(()=>{
     AOS.init({
-      duration: 600,
-      delay: 200
+      duration: 1000,
+      delay: 100
     });
   }, []);
 
 
   return(
     <div className='about'>
-     <div data-aos='fade-left' className='education'>
+     <div data-aos='zoom-in' className='education'>
       Education
      </div>
      <div data-aos='flip-up' className='experience'>
       Experience
      </div>
-     <div data-aos='slide-up' className='skills'>
+     <div data-aos='fade' className='skills'>
       Skills
      </div>
     </div>
