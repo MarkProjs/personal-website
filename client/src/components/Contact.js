@@ -36,14 +36,14 @@ function Contact() {
 
   useEffect(()=>{
     AOS.init({
-      duration: 1500,
+      duration: 1700,
       delay: 100
     });
   }, []);
 
 
   return (
-    <div data-aos='fade-right' className="contact">
+    <div data-aos='fade-up' className="contact">
       <div className="intro">
         <h1>Let's get connected!</h1>
         <p> Message or email me and let's get in touch!</p>
