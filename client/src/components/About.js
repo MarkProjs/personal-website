@@ -18,11 +18,11 @@ function About() {
      <div data-aos='flip-up' className='education'>
       Education
      </div>
-     <div data-aos='flip-down' className='skills'>
-      Skills
-     </div>
      <div data-aos='flip-left' className='experience'>
       Experience
+     </div>
+     <div data-aos='flip-down' className='skills'>
+      Skills
      </div>
     </div>
   );
