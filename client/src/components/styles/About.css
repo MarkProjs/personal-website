@@ -1,22 +1,3 @@
-.about {
-    height: 100vh;
-}
-
-.education {
-    height: 100%;
-    width: 100%;
-    background-color: aqua;
-}
-
-.experience {
-    height: 100%;
-    width: 100%;
-    background-color: aquamarine;
-    margin-bottom: 0;
-}
-
-.skills {
-    height: 100%;
-    width: 100%;
-    background-color: blue;
+.main_title {
+    font-size:5rem;
 }

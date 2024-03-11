@@ -15,7 +15,7 @@ function Home() {
 
   }, []);
   return (
-    <div data-aos='zoom-in-down' className="home">
+    <div data-aos='fade' className="home">
       <div className="main-heading">
         <div className="introduction">
           <div className="description">
