@@ -1,3 +1,30 @@
 .main_title {
-    font-size:5rem;
+  font-size: 5rem;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+#dawsonPic {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 10%;
+}
+
+.subtitle {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+ul,
+li {
+  font-size: 1rem;
 }

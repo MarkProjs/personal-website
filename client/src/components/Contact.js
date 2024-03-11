@@ -1,13 +1,12 @@
-
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import "./styles/Contact.css";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import ContactCard from "./helper-pages/ContactCard";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const contactItems = [
   {
@@ -33,17 +32,15 @@ const contactItems = [
 ];
 
 function Contact() {
-
-  useEffect(()=>{
+  useEffect(() => {
     AOS.init({
       duration: 1700,
-      delay: 100
+      delay: 100,
     });
   }, []);
 
-
   return (
-    <div data-aos='fade-up' className="contact">
+    <div data-aos="fade-up" className="contact">
       <div className="intro">
         <h1>Let's get connected!</h1>
         <p> Message or email me and let's get in touch!</p>
