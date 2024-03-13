@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./styles/About.css";
 import dawson_pic from "../assets/dawson_pic.jpeg";
+import eva_pic from "../assets/eva_pic.jpeg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -22,15 +23,46 @@ function About() {
             <h4>Computer Science Technology</h4>
             <h5>August 2020 - June 2023</h5>
           </div>
-          <img src={dawson_pic} alt="dawson_pic" id="dawsonPic" />
+          <div className="picNLink">
+            <a
+              href="https://www.dawsoncollege.qc.ca"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={dawson_pic} alt="dawson_pic" className="compPic" />
+            </a>
+            <p>
+              Link:{" "}
+              <a
+                href="https://www.dawsoncollege.qc.ca"
+                target="_blank"
+                rel="noreferrer"
+              >
+                https://www.dawsoncollege.qc.ca
+              </a>
+            </p>
+          </div>
         </div>
       </div>
 
       <div className="experience">
         <h2 className="main_title">Experience</h2>
-        <div className="eva">
-          <h3 className="subtitle">Eva</h3>
-          <h5>April 2023 - June 2023</h5>
+        <div className="content">
+          <div className="eva">
+            <h3 className="subtitle">Eva</h3>
+            <h5>April 2023 - June 2023</h5>
+          </div>
+          <div className="picNLink">
+            <a href="https://eva.coop/#/" target="_blank" rel="noreferrer">
+              <img src={eva_pic} alt="eva_pic" className="compPic" />
+            </a>
+            <p>
+              Link:{" "}
+              <a href="https://eva.coop/#/" target="_blank" rel="noreferrer">
+                https://eva.coop/#/
+              </a>
+            </p>
+          </div>
         </div>
       </div>
 
