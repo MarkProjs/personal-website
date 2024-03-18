@@ -40,12 +40,12 @@ function Contact() {
   }, []);
 
   return (
-    <div data-aos="flip-down" className="contact">
+    <div className="contact">
       <div className="intro">
         <h1>Let's get connected!</h1>
         <p> Message or email me and let's get in touch!</p>
       </div>
-      <div className="contactList">
+      <div data-aos="fade-up-right" className="contactList">
         {contactItems.map((item, index) => (
           <ContactCard key={index} item={item} />
         ))}

@@ -15,7 +15,7 @@ function About() {
 
   return (
     <div className="about">
-      <div className="education">
+      <div data-aos="fade-right" className="education">
         <h2 className="main_title">Education</h2>
         <div className="content">
           <div className="dawson">
@@ -45,7 +45,7 @@ function About() {
         </div>
       </div>
 
-      <div className="experience">
+      <div data-aos="fade-left" className="experience">
         <h2 className="main_title">Experience</h2>
         <div className="content">
           <div className="eva">
@@ -66,7 +66,7 @@ function About() {
         </div>
       </div>
 
-      <div className="skills">
+      <div data-aos="fade-right" className="skills">
         <h2 className="main_title">Skills</h2>
         <div className="content">
           <div className="front-end">
