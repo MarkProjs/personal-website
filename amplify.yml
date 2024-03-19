@@ -27,54 +27,54 @@ build-frontend:
       - client/build
       - client/node_modules
 
-# build-backend:
-#   stage: build
-#   cache:
-#     key:
-#       prefix: 'backend'
-#       files:
-#         - 'api/package-lock.json'
-#     paths:
-#       - 'api/node_modules/'
-#   script:
-#     - cd server && npm install
-#   artifacts:
-#     expire_in: 1 days
-#     when: on_success
-#     paths:
-#       - server/node_modules/
+build-backend:
+  stage: build
+  cache:
+    key:
+      prefix: 'backend'
+      files:
+        - 'api/package-lock.json'
+    paths:
+      - 'api/node_modules/'
+  script:
+    - cd server && npm install
+  artifacts:
+    expire_in: 1 days
+    when: on_success
+    paths:
+      - server/node_modules/
 
-# test-frontend:
-#   stage: test
-#   dependencies:
-#     - build
-#   dependencies:
-#     - build-frontend
-#   script:
-#     - cd client && npm run test
+test-frontend:
+  stage: test
+  dependencies:
+    - build
+  dependencies:
+    - build-frontend
+  script:
+    - cd client && npm run test
 
-# test-backend:
-#   stage: test
-#   dependencies:
-#     - build
-#   variables:
-#     AZURE_SAS: $AzureSas
-#     MONGO_PASS: $MongoPass
-#   dependencies:
-#     - build-backend
-#   script:
-#     - cd server && npm run test
-#     - cd .. && mkdir public
-#     - mv server/coverage/lcov-report/* public
-#   artifacts:
-#     expire_in: 1 days
-#     paths:
-#       - public
-#     reports:
-#       junit: server/junit.xml
-#       coverage_report:
-#         coverage_format: cobertura
-#         path: server/coverage/cobertura-coverage.xml
+test-backend:
+  stage: test
+  dependencies:
+    - build
+  variables:
+    AZURE_SAS: $AzureSas
+    MONGO_PASS: $MongoPass
+  dependencies:
+    - build-backend
+  script:
+    - cd server && npm run test
+    - cd .. && mkdir public
+    - mv server/coverage/lcov-report/* public
+  artifacts:
+    expire_in: 1 days
+    paths:
+      - public
+    reports:
+      junit: server/junit.xml
+      coverage_report:
+        coverage_format: cobertura
+        path: server/coverage/cobertura-coverage.xml
 
 # from M Frydrychowicz
 lint:
